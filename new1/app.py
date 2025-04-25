@@ -18,19 +18,11 @@ def index():
 def generate_document():
     try:
         doc_type = request.form.get('doc_type')
-        if not doc_type:
-            return "Document type is required", 400
-            
         name = request.form.get('name')
-        if not name:
-            return "Name is required", 400
-            
-        try:
-            template_data = load_data()
-        except Exception as e:
-            print(f"Error loading data.json: {str(e)}")
-            return "Error loading template data", 500
-            
+        
+        # Load data from JSON file
+        template_data = load_data()
+        
         # Common data for all documents
         data = {
             "name": name,
