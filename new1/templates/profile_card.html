@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f3f4f6;
+    }
+
+    .profile-card {
+      max-width: 420px;
+      background-color: #fff;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.07);
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #3b82f6;
+      margin-bottom: 15px;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      color: #1f2937;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .profile-role {
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+
+    .profile-date {
+      font-size: 13px;
+      color: #9ca3af;
+      margin-bottom: 20px;
+    }
+
+    .profile-bio {
+      font-size: 14px;
+      color: #374151;
+      margin: 20px 0;
+      line-height: 1.6;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #2563eb;
+      text-align: left;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    .profile-contact, .profile-skills, .profile-social {
+      text-align: left;
+    }
+
+    .contact-item, .skill-item, .social-link {
+      font-size: 14px;
+      margin: 4px 0;
+      color: #374151;
+    }
+
+    .social-link a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    .social-link a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: #9ca3af;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+  
+
+    <div class="profile-name">{{ name }}</div>
+    <div class="profile-role">Full Stack Developer</div>
+    <div class="profile-date">Profile Created on: 2025-04-25</div>
+
+    <div class="profile-bio">
+      Passionate developer with 5+ years of experience building modern web applications using React, Node.js, and Django. Always eager to learn and collaborate.
+    </div>
+
+    <div class="section-title">Contact</div>
+    <div class="profile-contact">
+      <div class="contact-item">📧 john.doe@example.com</div>
+      <div class="contact-item">📞 +1 234 567 8900</div>
+      <div class="contact-item">📍 New York, USA</div>
+    </div>
+
+    <div class="section-title">Skills</div>
+    <div class="profile-skills">
+      <div class="skill-item">✔ JavaScript (React, Next.js)</div>
+      <div class="skill-item">✔ Python (Django, Flask)</div>
+      <div class="skill-item">✔ SQL, PostgreSQL</div>
+      <div class="skill-item">✔ API Development</div>
+    </div>
+
+    <div class="section-title">Social Links</div>
+    <div class="profile-social">
+      <div class="social-link">🐦 <a href="#">Twitter</a></div>
+      <div class="social-link">💼 <a href="#">LinkedIn</a></div>
+      <div class="social-link">💻 <a href="#">GitHub</a></div>
+    </div>
+
+    <div class="footer-note">
+      Last updated: April 2025
+    </div>
+  </div>
+</body>
+</html>

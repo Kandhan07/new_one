@@ -1,0 +1,83 @@
+{
+    "profile": {
+        "title": "Profile Card",
+        "description": "Professional Profile Information"
+    },
+    "invoice": {
+        "company_name": "Company Name",
+        "address": "123 Business Street",
+        "city_state": "City, State 12345",
+        "invoice_prefix": "INV-2024-",
+        "items": [
+            {
+                "name": "Service 1",
+                "price": "$499.99"
+            },
+            {
+                "name": "Service 2",
+                "price": "$500.00"
+            }
+        ]
+    },
+    "blog": {
+        "title": "My Blog Post",
+        "subtitle": "A Comprehensive Guide to Modern Technology",
+        "content": "This is a sample blog post content.",
+        "author": {
+            "name": "John Doe",
+            "bio": "Tech enthusiast and professional developer",
+            "avatar": "author-avatar.jpg",
+            "social": {
+                "twitter": "@johndoe",
+                "linkedin": "linkedin.com/in/johndoe",
+                "github": "github.com/johndoe"
+            }
+        },
+        "metadata": {
+            "date_published": "2024-01-20",
+            "date_updated": "2024-01-25",
+            "reading_time": "5 minutes",
+            "category": "Technology",
+            "tags": ["programming", "web development", "tech trends"]
+        },
+        "featured_image": {
+            "url": "blog-header.jpg",
+            "alt": "Featured image for blog post",
+            "caption": "Modern technology concept"
+        },
+        "sections": [
+            {
+                "title": "Introduction",
+                "content": "An engaging introduction to the topic..."
+            },
+            {
+                "title": "Main Content",
+                "content": "Detailed explanation of the subject matter..."
+            },
+            {
+                "title": "Conclusion",
+                "content": "Summary and key takeaways..."
+            }
+        ],
+        "comments_enabled": true,
+        "likes_count": 42,
+        "views_count": 1250,
+        "author_prefix": "Written by",
+        "related_posts": [
+            {
+                "title": "Getting Started with Python",
+                "url": "/blog/python-basics"
+            },
+            {
+                "title": "Web Development Tips",
+                "url": "/blog/web-dev-tips"
+            }
+        ]
+    },
+    "certificate": {
+        "title": "Certificate of Completion",
+        "course": "Python Programming",
+        "cert_prefix": "CERT",
+        "signature_text": "Authorized Signature"
+    }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate of Completion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: landscape;
+            margin: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ae4949;
+        }
+        .certificate {
+            width: 1123px;
+            height: 794px;
+            margin: 0 auto;
+            position: relative;
+            border: 2px solid #FFD700;
+            padding: 60px;
+            box-sizing: border-box;
+            text-align: center;
+            background: linear-gradient(to bottom, #b79797 0%, #a5a7e6 100%);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: left;
+            margin-bottom: 60px;
+        }
+        .logo {
+            margin-bottom: 10px;
+            font-family: 'Product Sans', Arial, sans-serif;
+            font-size: 36px;  /* Increased from 24px to 36px */
+            letter-spacing: -1px;
+            margin-left: 20px;  /* Added margin for better positioning */
+        }
+        .logo span {
+            display: inline-block;
+        }
+        .logo .blue { color: #4285f4; }
+        .logo .red { color: #ea4335; }
+        .logo .yellow { color: #fbbc05; }
+        .logo .green { color: #34a853; }
+
+        .provided-by {
+            font-size: 14px;  /* Increased from 12px to 14px */
+            color: #1a1111;
+            margin-left: 22px;  /* Match logo margin */
+        }
+        .logo svg {
+            height: 20px;
+        }
+        .title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .name {
+            font-size: 24px;
+            color: #ff5722;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .course {
+            font-size: 18px;
+            color: #e96b0b;
+            margin: 15px 0;
+        }
+        .date {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            right: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .signature-block {
+            text-align: left;
+        }
+        .signature-image {
+            width: 150px;
+            height: 60px;
+            margin-bottom: 5px;
+        }
+        .signature-label {
+            font-size: 14px;
+            color: #333;
+            border-top: 1px solid #000;
+            width: 150px;
+            padding-top: 5px;
+        }
+        
+        .certificate-id {
+            font-size: 11px;
+            color: #171515;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate">
+        <div class="header">
+            <div class="logo">
+                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+            </div>
+            <div class="provided-by">Provided by Google</div>
+        </div>
+
+        <div class="title">CERTIFICATE OF COMPLETION</div>
+        <div class="subtitle">This is proudly presented to</div>
+
+        <div class="name">{{ name }}</div>
+
+        <div>for successfully completing the course</div>
+        <div class="course">{{ course }}</div>
+
+        <div class="date">on {{ date }}</div>
+
+        <div class="footer">
+            <div class="signature-block">
+                <img src="../static/images/sin.png" class="signature-image" alt="Authorized Signature">
+                <div class="signature-label">Authorized Signature</div>
+            </div>
+            <div class="certificate-id">Certificate ID: {{ certificate_id }}</div>
+        </div>
+    </div>
+</body>
+</html>
