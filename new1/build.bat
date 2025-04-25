@@ -1,0 +1,3 @@
+@echo off
+REM This is a Windows-compatible build script
+echo Building project...
